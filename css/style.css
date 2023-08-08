@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Intervogue";
+  src: url('../fonts/Intervogue/Fontspring-DEMO-intervogue-reg.otf');
+  src: url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+       url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
+       url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
+       url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype');
+}
+
+
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
@@ -397,6 +407,9 @@ a:focus {
 
 .about_section .detail-box p {
   margin-top: 35px;
+  font-family: "Intervogue","PT Sans", Calibri, Tahoma, sans-serif;
+  font-size: x-large;
+  text-align: justify;
 }
 
 .about_section .detail-box a {

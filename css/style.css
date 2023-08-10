@@ -125,6 +125,7 @@ a:focus {
 .navbar-brand {
   display: -webkit-box;
   display: -ms-flexbox;
+  margin-right: 0;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -150,6 +151,7 @@ a:focus {
 
 .custom_nav-container .navbar-toggler {
   outline: none;
+  padding-left: 0;
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {

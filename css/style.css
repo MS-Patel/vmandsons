@@ -433,6 +433,7 @@ a:focus {
 
 .price_section {
   background-color: #f8f8f8;
+  position: relative;
 }
 
 .price_section .price_container {
@@ -538,6 +539,19 @@ a:focus {
 .price_section .price_btn:hover {
   background-color: transparent;
   color: #0d0806;
+}
+
+.price_section .design-box {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 75px;
+}
+
+.price_section .design-box img {
+  width: 100%;
 }
 
 .ring_section {

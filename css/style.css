@@ -620,6 +620,7 @@ a:focus {
 .ring_section .ring_container .product-range ol li {
   display: block;
   position: relative;
+  text-transform: uppercase;
 }
 .ring_section .ring_container .product-range ol li span {
     margin-left: 100px;

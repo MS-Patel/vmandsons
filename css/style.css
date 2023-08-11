@@ -639,8 +639,13 @@ a:focus {
   border-radius: 2em;
   font-weight: 700;
 }
-
+@media (max-width:1020px){
+  .info_section .container{
+    max-width: 800px;
+  }
+}
 @media (max-width:520px){
+
   .ring_section .ring_container .product-range ol {
     counter-reset: item;
     list-style-type: none;

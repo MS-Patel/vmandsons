@@ -1,10 +1,6 @@
 @font-face {
   font-family: "Intervogue";
-  src: url('../fonts/Intervogue/Fontspring-DEMO-intervogue-reg.otf');
-  src: url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
-       url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
-       url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
-       url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype');
+  src: url('../fonts/Intervogue/Open\ Sauce\ One.ttf') format('truetype');
 }
 
 
@@ -191,7 +187,7 @@ a:focus {
 /*end header section*/
 /* slider section */
 .slider_section {
-  height: calc(100% - 70px);
+  min-height: calc(100% - 70px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

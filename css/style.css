@@ -576,14 +576,17 @@ a:focus {
   box-shadow: 0px 0px 56px 1px rgba(0, 0, 0, 0.08);
 }
 
+
+
 .ring_section .design-box {
   position: absolute;
   bottom: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 0;
+  right: 0;
   width: 75px;
 }
+
 
 .ring_section .design-box img {
   width: 100%;
@@ -798,7 +801,7 @@ a:focus {
 
 .contact_section .design-box {
   position: absolute;
-  bottom: 50%;
+  bottom: 100%;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   right: 0;
@@ -855,7 +858,7 @@ a:focus {
   outline: none;
   border: none;
   border-radius: 30px;
-  color: #fff;
+  color: #000;
   background: -webkit-gradient(linear, left top, left bottom, from(#f5e47b), to(#fb930a));
   background: linear-gradient(to bottom, #f5e47b, #fb930a);
   margin-top: 35px;
@@ -1144,6 +1147,7 @@ a:focus {
 }
 
 .whyus{
+  position: relative;
   padding: 30px 0 50px 0;
   background-color: #ffefc2;
 }
@@ -1153,6 +1157,15 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.whyus .design-box {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 75px;
 }
 
 .whyus .secondary_heading {

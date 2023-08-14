@@ -12,10 +12,8 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Lodge</title>
+  <title>Challa | VM & Sons Jewllers</title>
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -26,6 +24,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link href="css/photoswipe.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -59,60 +58,51 @@
                 </li>
               </ul>
             </div>
+            <!-- <div class="quote_btn-container ">
+              <a href="">
+                <img src="images/cart.png" alt="">
+                <div class="cart_number">
+                  0
+                </div>
+              </a>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div> -->
           </div>
         </nav>
       </div>
     </header>
-    <!-- end header section -->
+    <!-- end slider section -->
   </div>
 
-  <!-- contact section -->
+  <!-- item section -->
 
-  <section class="contact_section layout_padding">
-    <div class="container ">
-      <div class="">
-        <h2 class="">
-          Contact Us
-        </h2>
-      </div>
-
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <form action="">
-            <div>
-              <input type="text" placeholder="Name" />
-            </div>
-            <div>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div>
-              <input type="text" placeholder="Phone" />
-            </div>
-            <div>
-              <input type="text" class="message-box" placeholder="Message" />
-            </div>
-            <div class="d-flex ">
-              <button>
-                SEND
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end contact section -->
-
+  <div id="gallery" class="pswp-gallery">
+    <a
+      class="pswp-gallery__item"
+      href="./images/CHALLA/002.JPG"
+      target="_blank"
+      data-pswp-width="160"
+      data-pswp-height="102"
+      data-pswp-tile-url="./images/CHALLA/002.jpg"
+      data-pswp-max-width="5832"
+      data-pswp-max-height="4409">
+      <img src="./images/CHALLA/002.JPG" alt="Image #1" style="width: 250px;"/>
+    </a>
+    <a
+      class="pswp-gallery__item"
+      href="./images/CHALLA/002.JPG"
+      target="_blank"
+      data-pswp-width="160"
+      data-pswp-height="102"
+      data-pswp-tile-url="./images/CHALLA/002.jpg"
+      data-pswp-max-width="5832"
+      data-pswp-max-height="4409">
+      <img src="./images/CHALLA/002.JPG" alt="Image #1" style="width: 250px;" />
+    </a>
+    <!-- more slides ... -->
+  </div>
   <!-- info section -->
   <section class="info_section ">
     <div class="container">
@@ -195,9 +185,6 @@
     </div>
   </section>
 
-  <!-- end info_section -->
-
-  <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
       &copy; <span id="displayYear"></span> All Rights Reserved By
@@ -207,8 +194,35 @@
   <!-- footer section -->
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe-deep-zoom-plugin/1.1.1/photoswipe-deep-zoom-plugin.esm.min.js" integrity="sha512-S9v0zklfVpcjgePBF8vZX1sFb7ucLwdTAPYlOMAu/hbgUJFhTz7QKaIaSFdq8kJUx0CNxZhXlbXYyOv6bzGjRQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+
+  <script type="module">
+import PhotoSwipeLightbox from './js/lightbox.js';
+import PhotoSwipe from './js/photoswipe.js';
+import PhotoSwipeDeepZoom from './js/photoswipe-deep-zoom-plugin.esm.js';
+
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery',
+  children: '.pswp-gallery__item',
+  pswpModule: PhotoSwipe,
+
+  // Recommended PhotoSwipe options for this plugin
+  allowPanToNext: false, // prevent swiping to the next slide when image is zoomed
+  allowMouseDrag: true, // display dragging cursor at max zoom level
+  wheelToZoom: true, // enable wheel-based zoom
+  zoom: false // disable default zoom button
+});
+
+const deepZoomPlugin = new PhotoSwipeDeepZoom(lightbox, {
+  // deep zoom plugin options, for example:
+  tileSize: 256
+});
+lightbox.init();
+
+</script>
 </body>
 
 </html>

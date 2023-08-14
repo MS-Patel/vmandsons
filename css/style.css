@@ -141,7 +141,7 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 30px;
+  width: 45px;
   margin-right: 5px;
 }
 
@@ -1079,6 +1079,7 @@ a:focus {
   align-items: center;
   overflow: hidden;
   transition: 0.5s;
+  font-weight: 500;
 }
 
 .vision .container .card .box:hover {
@@ -1118,7 +1119,7 @@ a:focus {
 
 .vision .container .card .box .content p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
   z-index: 1;
   transition: 0.5s;

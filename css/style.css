@@ -1248,6 +1248,8 @@ a:focus {
 .docs-pictures li{
   margin: 10px;
   position: relative;
+  border:solid 2px rgb(122, 111, 111);
+
 }
 
 .docs-pictures li img{
@@ -1257,9 +1259,11 @@ a:focus {
 
 .docs-pictures li a{
   position: absolute;
-  left: 0;
+  left: 5px;
+  top: 5px;
   color: white;
   background-color: darkolivegreen;
   padding: 5px 10px;
   border-radius: 50px;
+  border:solid 2px white;
 }

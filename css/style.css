@@ -152,7 +152,7 @@ a:focus {
 }
 
 .custom_nav-container {
-  z-index: 99999;
+  z-index: 5;
   padding: 5px 0;
 }
 
@@ -1233,4 +1233,33 @@ a:focus {
   box-shadow: 1px 1px .1em #67adb5;
   background-color: #bde6fc;
   color: white;
+}
+
+
+.docs-pictures{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.docs-pictures li{
+  margin: 10px;
+  position: relative;
+}
+
+.docs-pictures li img{
+  width: 100%;
+  max-width: 350px;
+}
+
+.docs-pictures li a{
+  position: absolute;
+  left: 0;
+  color: white;
+  background-color: darkolivegreen;
+  padding: 5px 10px;
+  border-radius: 50px;
 }

@@ -24,7 +24,6 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  <link href="css/photoswipe.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -78,31 +77,6 @@
 
   <!-- item section -->
 
-  <div id="gallery" class="pswp-gallery">
-    <a
-      class="pswp-gallery__item"
-      href="./images/CHALLA/002.JPG"
-      target="_blank"
-      data-pswp-width="160"
-      data-pswp-height="102"
-      data-pswp-tile-url="./images/CHALLA/002.jpg"
-      data-pswp-max-width="5832"
-      data-pswp-max-height="4409">
-      <img src="./images/CHALLA/002.JPG" alt="Image #1" style="width: 250px;"/>
-    </a>
-    <a
-      class="pswp-gallery__item"
-      href="./images/CHALLA/002.JPG"
-      target="_blank"
-      data-pswp-width="160"
-      data-pswp-height="102"
-      data-pswp-tile-url="./images/CHALLA/002.jpg"
-      data-pswp-max-width="5832"
-      data-pswp-max-height="4409">
-      <img src="./images/CHALLA/002.JPG" alt="Image #1" style="width: 250px;" />
-    </a>
-    <!-- more slides ... -->
-  </div>
   <!-- info section -->
   <section class="info_section ">
     <div class="container">
@@ -194,35 +168,10 @@
   <!-- footer section -->
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe-deep-zoom-plugin/1.1.1/photoswipe-deep-zoom-plugin.esm.min.js" integrity="sha512-S9v0zklfVpcjgePBF8vZX1sFb7ucLwdTAPYlOMAu/hbgUJFhTz7QKaIaSFdq8kJUx0CNxZhXlbXYyOv6bzGjRQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
 
-  <script type="module">
-import PhotoSwipeLightbox from './js/lightbox.js';
-import PhotoSwipe from './js/photoswipe.js';
-import PhotoSwipeDeepZoom from './js/photoswipe-deep-zoom-plugin.esm.js';
 
-
-const lightbox = new PhotoSwipeLightbox({
-  gallery: '#gallery',
-  children: '.pswp-gallery__item',
-  pswpModule: PhotoSwipe,
-
-  // Recommended PhotoSwipe options for this plugin
-  allowPanToNext: false, // prevent swiping to the next slide when image is zoomed
-  allowMouseDrag: true, // display dragging cursor at max zoom level
-  wheelToZoom: true, // enable wheel-based zoom
-  zoom: false // disable default zoom button
-});
-
-const deepZoomPlugin = new PhotoSwipeDeepZoom(lightbox, {
-  // deep zoom plugin options, for example:
-  tileSize: 256
-});
-lightbox.init();
-
-</script>
 </body>
 
 </html>

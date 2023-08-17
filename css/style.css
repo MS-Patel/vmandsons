@@ -79,6 +79,10 @@ body {
 .sub_page .hero_area {
   height: auto;
   background-position: top right;
+  top:0;
+  position: sticky;
+  background-color: #ffefc2;
+  z-index: 1000;
 }
 
 .hero_area.sub_pages {
@@ -385,6 +389,20 @@ a:focus {
 
 .item_section .item_container .box h5 {
   text-transform: uppercase;
+}
+
+.item_section .item_container .box .name {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: auto;
+}
+
+.item_section .item_container .box h5 {
+  text-transform: none;
+  margin-bottom: 0;
+  font-size: medium;
+  font-family: inherit;
 }
 
 .item_section .item_container .box:hover {
@@ -1263,7 +1281,13 @@ a:focus {
   margin: 10px;
   position: relative;
   border:solid 3px rgb(255, 255, 255);
+}
 
+@media (max-width:420px) {
+  .docs-pictures li{
+    margin: 10px 0px;
+    border:solid 2px rgb(255, 255, 255);
+  }
 }
 
 .docs-pictures li img{

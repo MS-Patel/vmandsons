@@ -677,11 +677,11 @@ a:focus {
 
 @media (max-width:762px){
   .about_section{
-    padding-top: 400px;
+    padding-top: 350px;
   }
 }
 
-@media (max-width:500px){
+@media (max-width:420px){
   .about_section{
     padding-top: 200px;
   }

@@ -902,6 +902,7 @@ a:focus {
   color: #101010;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.40);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.40);
+  border: solid 0.5px rgba(0,0,0,0.2);
 }
 
 .contact_section input::-webkit-input-placeholder {

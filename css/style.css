@@ -680,7 +680,7 @@ a:focus {
     max-width: 800px;
   }
 }
-
+/*
 @media (max-width:770px){
   .about_section{
     padding-top: 350px;
@@ -691,7 +691,7 @@ a:focus {
   .about_section{
     padding-top: 200px;
   }
-}
+} */
 
 @media (max-width:1000px){
 
@@ -699,7 +699,7 @@ a:focus {
     counter-reset: item;
     list-style-type: none;
     line-height: 2.5;
-    margin-left: -10px;
+    margin-left: -15px;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing:0.2ch;
@@ -711,7 +711,29 @@ a:focus {
     position: relative;
   }
   .ring_section .ring_container .product-range ol li span {
-      margin-left: 80px;
+      margin-left: 60px;
+  }
+}
+
+@media (max-width:800px){
+
+  .ring_section .ring_container .product-range ol {
+    counter-reset: item;
+    list-style-type: none;
+    line-height: 2.5;
+    margin-left: -15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing:0.2ch;
+    text-align: justify;
+  }
+
+  .ring_section .ring_container .product-range ol li {
+    display: block;
+    position: relative;
+  }
+  .ring_section .ring_container .product-range ol li span {
+      margin-left: 60px;
   }
 }
 

@@ -54,7 +54,7 @@
                     aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="../images/down.png" width="25" /></button>
                 </li>
-                <ul class="navbar-nav collapse" id="submenu">
+                <ul class="navbar-nav collapse" id="submenu" style="background-color: #ffa463;">
                   <li> <a class="nav-link" href="../pages/01.html">Gents Ring</a> </li>
                   <li> <a class="nav-link" href="../pages/02.html">Challa</a> </li>
                   <li> <a class="nav-link" href="../pages/03.html">Ladies Ring</a> </li>
@@ -586,15 +586,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <form action="">
+          <form id="contact-form">
             <div>
-              <input type="text" placeholder="Name" required />
+              <input type="text" placeholder="Name" name="from_name" required />
             </div>
             <div>
-              <input type="text" placeholder="Company" required />
+              <input type="text" placeholder="Company" name="company" required />
             </div>
             <div>
-              <select required>
+              <select required name="state">
                 <option value="">Select your state?</option>
                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -627,13 +627,13 @@
               </select>
             </div>
             <div>
-              <input type="text" placeholder="Phone" required />
+              <input type="text" placeholder="Phone" name="mob" required />
             </div>
             <div>
-              <input type="text" class="message-box" placeholder="Message" />
+              <input type="text" class="message-box" name="message" placeholder="Message" />
             </div>
             <div class="d-flex ">
-              <button onclick="sendContact();">
+              <button>
                 SEND
               </button>
             </div>
@@ -752,6 +752,25 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script>
+    emailjs.init('X-V8sH2h20FuzMqRR');
+    window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_fwqvh4i', 'template_5zzo0ys', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+  </script>
 </body>
 
 </html>

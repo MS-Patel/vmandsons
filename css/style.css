@@ -105,6 +105,13 @@ body {
   font-weight: 600;
 }
 
+.navbar-expand-lg{
+  justify-content: space-between;
+}
+
+.navbar-collapse{
+  flex-grow: unset;
+}
 a,
 a:hover,
 a:focus {

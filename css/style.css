@@ -104,6 +104,9 @@ body {
   text-align: center;
   font-weight: 600;
 }
+.docs-galley{
+  min-height: calc(100vh - 320px);
+}
 
 .navbar-expand-lg{
   justify-content: space-between;

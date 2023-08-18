@@ -312,6 +312,7 @@
                 emailjs.sendForm('service_fwqvh4i', 'template_5zzo0ys', this)
                     .then(function() {
                         console.log('SUCCESS!');
+                        $('#contact-form').reset()
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
